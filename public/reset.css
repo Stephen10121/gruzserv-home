@@ -74,6 +74,10 @@ table {
     background: #888;
 }
 
+::-webkit-scrollbar-thumb:hover {
+	width: 10px;
+}
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;

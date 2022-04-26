@@ -126,14 +126,14 @@ main section {
 
 .about-text-part {
     width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 50% 50%;
     background-color: #001220;
     padding: 10px;
 }
 
-.about-text-part-box {
+.about-text-part-box,
+.extra {
     padding-top: 8rem;
     display: flex;
     width: 100%;
@@ -141,14 +141,16 @@ main section {
     gap: 2rem;
 }
 
-.about-text-part-box h3 {
+.about-text-part-box h3,
+.extra h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     font-weight: bold;
     color: #f3f3f3;
 }
 
-.about-text-part-box p {
+.about-text-part-box p,
+.extra p {
     font-family: 'Poppins', sans-serif;
     min-width: 20ch;
     line-height: 20px;
@@ -158,9 +160,21 @@ main section {
     color: #dfdfdf;
 }
 
-.about-text-part-box p span a {
+.about-text-part-box p span a,
+.extra p span a {
     color: rgb(161, 161, 161);
     text-decoration: underline;
+}
+
+.extra ul li {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: clamp(1.5rem, 1.75rem, 2rem);
+    color: #dfdfdf;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px 1px;
 }
 
 #contact {
