@@ -4,7 +4,7 @@
   "description": "Home page for my website",
   "main": "homeServer.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon homeServer.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
     "ejs": "^3.1.7",
     "express": "^4.18.0",
     "nodemailer": "^6.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
