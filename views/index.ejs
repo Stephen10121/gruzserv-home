@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Gruzservices is the hub for all of my projects.">
     <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="/reset.css" type="text/css">
     <link rel="stylesheet" href="/style.css" type="text/css">
@@ -46,9 +48,9 @@
         <section id="contact">
             <div class="contact-text-part">
                 <h3>Contact Me</h3>
-                <form>
-                    <input type="email" placeholder="Email">
-                    <textarea cols="30" rows="10" placeholder="What"></textarea>
+                <form id="sendForm">
+                    <input type="email" placeholder="Email" required>
+                    <textarea cols="30" rows="10" placeholder="What" required></textarea>
                     <button type="submit">Send</button>
                 </form>
             </div>
@@ -62,5 +64,28 @@
             <a href="#contact">Contact</a>
         </section>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity=
+        "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous">
+    </script>
+    <script>
+        const sendMessage = (e) => {
+            e.preventDefault();
+            const data = {
+                email: e.target[0].value,
+                what: e.target[1].value
+            }
+            $.post("/contact", data, (data, status) => {
+                if (status === "success") {
+                    alert(data.msg);
+                } else {
+                    alert("Error sending message");
+                }
+            });
+        }
+
+        document.querySelector("#sendForm").addEventListener("submit", (e) => sendMessage(e));
+    </script>
 </body>
 </html>
