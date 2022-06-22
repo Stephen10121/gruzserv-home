@@ -91,6 +91,7 @@ main section {
     margin: 2px 1px;
     height: 40px;
     background-color: #001220;
+    position: relative;
     color: white;
     border-radius: 100vw;
     display: inline-flex;
@@ -101,6 +102,36 @@ main section {
 
 .stuffimade a:hover {
     background-color: #002038;
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    height: 100px;
+    z-index: 20;
+}
+
+.hidden::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    z-index: 19;
+}
+
+.stuffimade a:hover .hidden {
+    display: block;
 }
 
 #about {
