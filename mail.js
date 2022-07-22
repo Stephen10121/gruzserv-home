@@ -1,5 +1,5 @@
-const mail = (to, what) => {
+const sendMail  = (to, what) => {
 console.log({to, what});
 }
 
-module.exports = {mail}
+module.exports = {sendMail }
