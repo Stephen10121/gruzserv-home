@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+		<url>
+			<loc>https://www.gruzservices.com</loc>
+			<changefreq>daily</changefreq>
+		</url>
+
+		<url>
+			<loc>https://www.gruzservices.com/#section1</loc>
+			<changefreq>daily</changefreq>
+		</url>
+
+		<url>
+			<loc>https://www.gruzservices.com/#about</loc>
+			<changefreq>daily</changefreq>
+		</url>
+
+		<url>
+			<loc>https://www.gruzservices.com/#contact</loc>
+			<changefreq>daily</changefreq>
+		</url>
+
+		<url>
+			<loc>https://auth.gruzservices.com</loc>
+			<changefreq>daily</changefreq>
+		</url>
+
+		<url>
+			<loc>https://small.gruzservices.com</loc>
+			<changefreq>daily</changefreq>
+		</url>
+
+		<url>
+			<loc>https://files.gruzservices.com</loc>
+			<changefreq>daily</changefreq>
+		</url>
+
+	</urlset>
+

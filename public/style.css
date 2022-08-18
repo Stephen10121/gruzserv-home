@@ -253,6 +253,7 @@ main section {
     border: none;
     padding: 10px;
     background-color: #bdbdbd;
+    font-family: sans-serif;
 }
 
 .contact-text-part form textarea {
@@ -262,6 +263,7 @@ main section {
     padding: 10px;
     background-color: #bdbdbd;
     resize: none;
+    font-family: sans-serif;
 }
 
 .contact-text-part form button {
